@@ -1,10 +1,12 @@
 /* Body*/
 body{
-    background-color: rgb(250, 236, 225);
+    background-image: url(/img/background.jpg);
+    background-position: -79px 70px ;
+    background-repeat: no-repeat;
 }
-
 /* Header */
 .header{
+    background-position: 0;
     padding: 5px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -24,3 +26,81 @@ body{
   display: block;
   margin-top: 4px;
 }
+
+/* Main */
+.main {
+  text-align: center;
+}
+
+.container {
+  padding: 33px;
+}
+
+.today-push {
+  position: relative;
+  font-size: 50px;
+  width: 200px;
+  height: 200px;
+  background-color: aliceblue;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 200px;
+  margin-left: 70px;
+  margin-top: 40px;
+}
+
+.today-pod {
+  position: absolute;
+  font-size: 40px;
+  width: 100px;
+  height: 100px;
+  background-color: aliceblue;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+  right: 76px;
+  top: 246px;
+}
+
+.btn {
+  width: 300px;
+  height: 60px;
+  font-size: 27px;
+  border-radius: 10px;
+  background-color: rgb(246, 255, 84);
+  margin-top: 150px;
+  transition: all .2s linear;
+  margin-bottom: 10px;
+}
+
+.btn:hover {
+  color: white;
+  background-color: rgb(111, 168, 160);
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	padding-right: 25px;
+	padding-left: 25px;
+}
+
+.grafs,
+.edit {
+  padding: 17px 40px;
+  font-size: 27px;
+  border-radius: 10px;
+  color: black;
+  background-color: rgb(246, 255, 84);
+  transition: all .2s linear;
+}
+
+.edit {
+	background-color: white;
+}
+
+.edit:hover,
+.grafs:hover {
+	color: white;
+	background-color: rgb(111, 168, 160);
+  }
