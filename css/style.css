@@ -121,30 +121,51 @@ body{
 
 /* Modal */
 .modal {
-	display: none; 
+	/* display: none;  */
 	position: fixed; /* Оставаться на месте */
 	z-index: 3; /* Сидеть на вершине */
-	left: 10%;
+	left: 20%;
 	top: 20%;
-	width: 80%; /* Полная ширина */
-	height: 30%; /* Полная высота */
+	width: 60%; /* Полная ширина */
+	height: 23%; /* Полная высота */
 	text-align: center;
 	padding: 10px;
-	background-color: rgb(165, 148, 148); /* Черный с непрозрачностью */
+	border-radius: 20px;
+	background-color: rgb(5, 57, 92); /* Черный с непрозрачностью */
 }
 
 #form {
-	height: 200px;
+	height: 100px;
 }
 
-#btn-close {
+.modal-title {
+	font-size: 30px;
+	font-weight: 500;
+	margin-top: 8px;
+	margin-bottom: 10px;
+	color: white;
+}
+
+#much {
+	border: 0px;
+	border-radius: 10px;
 	width: 100px;
-	height: 60px;
+	height: 50px;
+	margin-bottom: 20px;
+	font-size: 30px;
+	font-family: 'Kanit', sans-serif;
+	font-weight: 600;
+}
+
+#btn-close,
+#btn-save {
+	width: 80px;
+	height: 40px;
 	font-size: 27px;
 	font-family: 'Kanit', sans-serif;
 	font-weight: 500;
 	border-radius: 10px;
-	background-color: rgb(246, 255, 84);
+	background-color: rgb(253, 255, 107);
 	transition: all .2s linear;
 	margin-bottom: 10px;
 	border: 0;
