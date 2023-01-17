@@ -39,18 +39,29 @@
                 3
             </div>
 
-            <button class="btn">
+            <button class="btn" onclick="open_modal()">
                 Add new
             </button>
 
-            <footer class="footer">
+            <div class="footer">
                 <a href="#!" class="grafs">
                     Grafics
                 </a>
                 <a href="edit.html" class="edit">Edit</a>
-            </footer>
+            </div>
         </div>
     </main>
+
+    
+    <div class="modal" id="MyModal">
+        <div class="modal-content">
+            <p id="form">text Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime soluta, esse excepturi ratione dignissimos nemo aperiam corrupti dolorum non consequuntur quisquam inventore atque. Corrupti eligendi, modi adipisci fugiat exercitationem quae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo totam odio impedit ex in consequatur modi voluptatem, sit quaerat minima, maxime fugit libero quia nemo repellat officiis harum perferendis iste.</p>
+            <button id="btn-close" onclick="close_modal()">
+                Close
+            </button>
+        </div>
+    </div>    
+    <script src="script/main.js"></script>
     
 </body>
 </html>
