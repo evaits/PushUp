@@ -3,6 +3,8 @@ body{
     background-image: url(/img/background.jpg);
     background-position: -79px 70px ;
     background-repeat: no-repeat;
+	font-family: 'Kanit', sans-serif;
+	font-weight: 400;
 }
 /* Header */
 .header{
@@ -17,65 +19,68 @@ body{
 }
 
 .stat:not(:last-child){
-  margin-right: 20px;
+  	margin-right: 20px;
 }
 
 .header span{
-  color: rgb(177, 255, 52);
-  font-size: 20px;
-  display: block;
-  margin-top: 4px;
+	color: rgb(177, 255, 52);
+	font-size: 20px;
+	display: block;
+	margin-top: 4px;
 }
 
 /* Main */
 .main {
-  text-align: center;
+  	text-align: center;
 }
 
 .container {
-  padding: 33px;
+  	padding: 33px;
 }
 
 .today-push {
-  position: relative;
-  font-size: 50px;
-  width: 200px;
-  height: 200px;
-  background-color: aliceblue;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 200px;
-  margin-left: 70px;
-  margin-top: 40px;
+	position: relative;
+	font-size: 50px;
+	width: 200px;
+	height: 200px;
+	background-color: aliceblue;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 200px;
+	margin-left: 70px;
+	margin-top: 40px;
 }
 
 .today-pod {
-  position: absolute;
-  font-size: 40px;
-  width: 100px;
-  height: 100px;
-  background-color: aliceblue;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 100px;
-  right: 76px;
-  top: 246px;
+	position: absolute;
+	font-size: 40px;
+	width: 100px;
+	height: 100px;
+	background-color: aliceblue;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 100px;
+	right: 76px;
+	top: 246px;
 }
 
 .btn {
-  width: 300px;
-  height: 60px;
-  font-size: 27px;
-  border-radius: 10px;
-  background-color: rgb(246, 255, 84);
-  margin-top: 150px;
-  transition: all .2s linear;
-  margin-bottom: 10px;
+	width: 300px;
+	height: 60px;
+	font-size: 27px;
+	font-family: 'Kanit', sans-serif;
+	font-weight: 500;
+	border-radius: 10px;
+	background-color: rgb(246, 255, 84);
+	margin-top: 150px;
+	transition: all .2s linear;
+	margin-bottom: 10px;
+	border: 0;
 }
 
 .btn:hover {
-  color: white;
-  background-color: rgb(111, 168, 160);
+  	color: white;
+  	background-color: rgb(111, 168, 160);
 }
 
 .footer {
@@ -87,12 +92,13 @@ body{
 
 .grafs,
 .edit {
-  padding: 17px 40px;
-  font-size: 27px;
-  border-radius: 10px;
-  color: black;
-  background-color: rgb(246, 255, 84);
-  transition: all .2s linear;
+	padding: 17px 40px;
+	font-size: 27px;
+	font-weight: 500;
+	border-radius: 10px;
+	color: black;
+	background-color: rgb(246, 255, 84);
+	transition: all .2s linear;
 }
 
 .edit {
