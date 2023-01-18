@@ -59,9 +59,17 @@
                 Add new
             </h2>
             <form id="form">
-                <input type="number" name="inp" id="much"><br>
+                <input type="number" name="inp" id="much" min="1"><br>
                 <button id="btn-save">Save</button>
             </form>
+            <button onclick="add_10()" class="add-btn">+10</button>
+            <button onclick="add_20()" class="add-btn">+20</button>
+            <button onclick="add_30()" class="add-btn">+30</button>
+            
+            <button onclick="dell_10()" class="dell-btn">-10</button>
+            <button onclick="dell_20()" class="dell-btn">-20</button>
+            <button onclick="dell_30()" class="dell-btn">-30</button>
+
             <button id="btn-close" onclick="close_modal()">
                 Close
             </button>
