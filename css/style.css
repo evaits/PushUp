@@ -1,9 +1,7 @@
 /* Body*/
 body{
     background-image: url(../img/background.jpg);
- 
     background-position: -97px 70px ;
-	background-size: 70vh;
     background-position: -79px 70px ;
     background-repeat: no-repeat;
 	font-family: 'Kanit', sans-serif;
@@ -121,7 +119,7 @@ body{
 
 /* Modal */
 .modal {
-	/* display: none;  */
+	display: none; 
 	position: fixed; /* Оставаться на месте */
 	z-index: 3; /* Сидеть на вершине */
 	left: 20%;
@@ -156,6 +154,7 @@ body{
 	font-family: 'Kanit', sans-serif;
 	font-weight: 600;
 	position: relative;
+
 }
 
 #btn-close,
@@ -183,11 +182,27 @@ body{
 }
 
 .add-btn {
-	left: 35px;
-	bottom: 70px;
+	left: 30px;
+	bottom: 30px;
 }
 
 .dell-btn {
-	left: 23px;
-	bottom: 0px;
+	left: 203px;
+	bottom: 30px;
+}
+
+.add-one {
+	bottom: 122px;
+}
+
+.add-two {
+	bottom: 75px;
+}
+
+.dell-one {
+	bottom: 122px;
+}
+
+.dell-two {
+	bottom: 75px;
 }
