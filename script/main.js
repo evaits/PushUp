@@ -14,3 +14,67 @@ function close_modal() {
 function add(amount) {
     inp.value = Number(inp.value) + amount
 }
+
+
+//              Changes
+
+let arr = []
+
+console.log(JSON.parse(localStorage.getItem("arr")))
+
+
+// Main
+let push = document.querySelector('.today-push')
+let pod = document.querySelector('.today-pod')
+
+let sum = 0
+arr.map((item) => sum += item);
+push.innerHTML = sum
+pod.innerHTML = arr.length
+
+// Second
+let best = document.querySelector('.best')
+let sort_arr = arr.sort((a,b)=>a-b);
+best.innerHTML = sort_arr[sort_arr.length-1] 
+
+let total = document.querySelector('.total')
+total.innerHTML = sum
+
+let average = document.querySelector('.average')
+average.innerHTML = sum/arr.length + '/ap'
+
+
+
+
+function save() {
+    if((inp.value == '') || (inp.value<=0)){
+        alert('Error')
+        return
+    }
+    else{
+        arr.push(inp.value)
+
+        //          Add num
+        sum += Number(inp.value)
+        push.innerHTML = sum
+        pod.innerHTML = arr.length
+
+        //          Change 
+
+        // Best
+        let sort_arr = arr.sort((a,b)=>a-b);
+        best.innerHTML = sort_arr[sort_arr.length-1] 
+
+        // Total
+        total.innerHTML = sum
+
+        // Average
+        average.innerHTML = Math.round(sum/arr.length) + '/ap'
+
+        // LocalStorage
+        localStorage.setItem(arr, JSON.stringify(arr));
+
+        //          Close modal
+        close_modal()
+    } 
+}
