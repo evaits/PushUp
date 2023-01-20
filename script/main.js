@@ -1,4 +1,5 @@
 // modal
+// localStorage.setItem("arr", 0)
 let modal = document.querySelector(".modal")
 let inp = document.querySelector("#much")
 
@@ -17,10 +18,17 @@ function add(amount) {
 
 
 //              Changes
-
 let arr = []
+arr = localStorage.getItem("arr")
+    arr = arr.split(',')
+    for(let i = 0; i<arr.length; i++){
+        arr[i] = Number(arr[i])
+    }
+if(arr[0] == 0){
+    arr = []
+}
 
-console.log(JSON.parse(localStorage.getItem("arr")))
+console.log(arr)
 
 
 // Main
@@ -30,7 +38,7 @@ let pod = document.querySelector('.today-pod')
 let sum = 0
 arr.map((item) => sum += item);
 push.innerHTML = sum
-pod.innerHTML = arr.length
+pod.innerHTML = arr.length-1
 
 // Second
 let best = document.querySelector('.best')
@@ -52,7 +60,7 @@ function save() {
         return
     }
     else{
-        arr.push(inp.value)
+        arr.push(Number(inp.value))
 
         //          Add num
         sum += Number(inp.value)
@@ -72,8 +80,7 @@ function save() {
         average.innerHTML = Math.round(sum/arr.length) + '/ap'
 
         // LocalStorage
-        localStorage.setItem(arr, JSON.stringify(arr));
-
+        localStorage.setItem("arr", arr)
         //          Close modal
         close_modal()
     } 
