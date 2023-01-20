@@ -1,5 +1,8 @@
 // modal
-// localStorage.setItem("arr", 0)
+if(localStorage.getItem("arr") == null){
+    localStorage.setItem("arr", 0)
+}
+   
 let modal = document.querySelector(".modal")
 let inp = document.querySelector("#much")
 
@@ -24,9 +27,9 @@ arr = localStorage.getItem("arr")
     for(let i = 0; i<arr.length; i++){
         arr[i] = Number(arr[i])
     }
-if(arr[0] == 0){
-    arr = []
-}
+// if(arr[0] == 0){
+//     arr = []
+// }
 
 console.log(arr)
 
