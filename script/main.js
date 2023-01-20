@@ -18,7 +18,7 @@ function add(amount) {
 
 
 //              Changes
-let arr = []
+let arr = [0]
 arr = localStorage.getItem("arr")
     arr = arr.split(',')
     for(let i = 0; i<arr.length; i++){
