@@ -1,5 +1,10 @@
 // modal
-// localStorage.setItem("arr", 0)
+if(localStorage.getItem("arr") == null){
+    localStorage.setItem("arr", 0)
+}
+
+
+   
 let modal = document.querySelector(".modal")
 let inp = document.querySelector("#much")
 
@@ -18,18 +23,12 @@ function add(amount) {
 
 
 //              Changes
-let arr = [0]
+let arr = []
 arr = localStorage.getItem("arr")
-    arr = arr.split(',')
-    for(let i = 0; i<arr.length; i++){
-        arr[i] = Number(arr[i])
-    }
-if(arr[0] == 0){
-    arr = []
+arr = arr.split(',')
+for(let i = 0; i<arr.length; i++){
+    arr[i] = Number(arr[i])
 }
-
-console.log(arr)
-
 
 // Main
 let push = document.querySelector('.today-push')
@@ -38,7 +37,7 @@ let pod = document.querySelector('.today-pod')
 let sum = 0
 arr.map((item) => sum += item);
 push.innerHTML = sum
-pod.innerHTML = arr.length-1
+arr[0] == 0 ? pod.innerHTML = 0 : pod.innerHTML = arr.length
 
 // Second
 let best = document.querySelector('.best')
@@ -49,7 +48,7 @@ let total = document.querySelector('.total')
 total.innerHTML = sum
 
 let average = document.querySelector('.average')
-average.innerHTML = sum/arr.length + '/ap'
+average.innerHTML = Math.round(sum/arr.length) + '/ap'
 
 
 
@@ -60,6 +59,10 @@ function save() {
         return
     }
     else{
+        if(arr[0] == 0){
+            arr.shift()
+            console.log(arr)
+        }
         arr.push(Number(inp.value))
 
         //          Add num
@@ -85,3 +88,5 @@ function save() {
         close_modal()
     } 
 }
+
+// Add preloder 
