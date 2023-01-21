@@ -120,12 +120,20 @@ body{
 /* Modal */
 .modal {
 	display: none; 
-	position: fixed; /* Оставаться на месте */
-	z-index: 3; /* Сидеть на вершине */
-	left: 20%;
+	/* position: fixed; Оставаться на месте */
+	width: 100vw;
+	height: 100vh;
+	z-index: 4;
+	position: absolute;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.699);
+}
+.modal-content {
+	position: absolute;
+	left: 18.5%;
 	top: 20%;
-	width: 60%; /* Полная ширина */
-	height: 27%; /* Полная высота */
+	width: 60%;
+	height: 26%;
 	text-align: center;
 	padding: 10px;
 	border-radius: 20px;
@@ -183,26 +191,27 @@ body{
 
 .add-btn {
 	left: 30px;
-	bottom: 30px;
+	top: 180px;
 }
 
 .dell-btn {
 	left: 203px;
-	bottom: 30px;
+	top: 180px;
 }
 
 .add-one {
-	bottom: 122px;
+	top: 78px;
 }
 
 .add-two {
-	bottom: 75px;
+	top: 129px;
 }
 
 .dell-one {
-	bottom: 122px;
+	top: 78px;
 }
 
 .dell-two {
-	bottom: 75px;
+	top: 129px;
 }
+

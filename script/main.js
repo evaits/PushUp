@@ -59,7 +59,6 @@ function save() {
     else{
         if(arr[0] == 0){
             arr.shift()
-            console.log(arr)
         }
         arr.push(Number(inp.value))
 
