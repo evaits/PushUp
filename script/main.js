@@ -1,10 +1,4 @@
 // modal
-if(localStorage.getItem("arr") == null){
-    localStorage.setItem("arr", 0)
-}
-
-
-   
 let modal = document.querySelector(".modal")
 let inp = document.querySelector("#much")
 
@@ -23,6 +17,10 @@ function add(amount) {
 
 
 //              Changes
+if(localStorage.getItem("arr") == null){
+    localStorage.setItem("arr", 0)
+}
+
 let arr = []
 arr = localStorage.getItem("arr")
 arr = arr.split(',')
@@ -88,5 +86,3 @@ function save() {
         close_modal()
     } 
 }
-
-// Add preloder 
