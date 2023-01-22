@@ -15,7 +15,6 @@ function add(amount) {
     inp.value = Number(inp.value) + amount
 }
 
-
 //              Changes
 if(localStorage.getItem("arr") == null){
     localStorage.setItem("arr", 0)
@@ -48,9 +47,7 @@ total.innerHTML = sum
 let average = document.querySelector('.average')
 average.innerHTML = Math.round(sum/arr.length) + '/ap'
 
-
-
-
+// Save
 function save() {
     if((inp.value == '') || (inp.value<=0)){
         alert('Error')
@@ -84,4 +81,25 @@ function save() {
         //          Close modal
         close_modal()
     } 
+}
+
+// Save Days
+let now = new Date()
+let date = now.toLocaleDateString()
+if(localStorage.getItem("today") == null){
+    localStorage.setItem("today", date)
+}
+let date_object = localStorage.getItem("today")
+if(date_object !== date){
+    localStorage.setItem(date_object, sum)
+    localStorage.setItem("today", date)
+    
+    localStorage.removeItem("arr")
+    location = location
+}
+
+// Clear
+function cler() {
+    localStorage.clear()
+    location = location
 }
