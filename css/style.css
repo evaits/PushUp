@@ -215,3 +215,24 @@ body{
 	top: 129px;
 }
 
+/* Adaptation */
+@media (max-width: 360px) {
+	body{
+		background-position: -100px 70px;
+	}
+	.today-push{
+		margin-left: 49px;
+	}
+	.today-pod{
+		right: 50px;
+	}
+
+	.footer{
+		padding-left: 0;
+	}
+
+	.edit {
+		margin-left: 27px;
+	}
+}
+	

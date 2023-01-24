@@ -60,3 +60,5 @@ function close_modal() {
     modal.style.display = "none"
     inp.value = ''
 }
+
+// Do focus on btn
