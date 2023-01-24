@@ -30,6 +30,26 @@
             Back
         </a>
     </footer>
+
+    <div class="modal" id="MyModal">
+        <div class="modal-content">
+            <h2 class="modal-title">
+                Add new
+            </h2>
+            <form id="form">
+                <input type="number" name="inp" class="input" id="much" min="1"><br>
+                <button type="button" id="btn-save">Save</button>
+            </form>
+
+            <button id="btn-close" onclick="close_modal()">
+                Close
+            </button>
+        </div>
+    </div>   
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script src="script/edit.js"></script>
+    <script src="script/edit_jq.js"></script>
 </body>
 </html>

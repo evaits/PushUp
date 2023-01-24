@@ -15,7 +15,7 @@ if (localStorage.getItem('arr')) {
     let div;
     let span1;
     let span2;
-    let btn;
+    var btn;
 
     for(let i = 0; i<localStorage.length; i++){
         if((localStorage.key(i)=='arr') || (localStorage.key(i) == "today")){
@@ -33,7 +33,9 @@ if (localStorage.getItem('arr')) {
         span1.className = "data"
         span2.className = "number"
         btn.className = "btn"
-        
+        btn.id = '_'+i
+
+
         local = localStorage.key(i)
         
         span1.innerHTML = local
@@ -47,4 +49,14 @@ if (localStorage.getItem('arr')) {
         li.append(btn)
         ul.prepend(li)
     }
+}
+
+
+// Close modal
+let modal = document.querySelector(".modal")
+let inp = document.querySelector("#much")
+
+function close_modal() {
+    modal.style.display = "none"
+    inp.value = ''
 }
