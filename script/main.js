@@ -100,6 +100,6 @@ if(date_object !== date){
 
 // Clear
 function cler() {
-    localStorage.clear()
+    localStorage.removeItem('arr')
     location = location
 }
