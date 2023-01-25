@@ -10,11 +10,11 @@ $(document).ready(function () {
         $('.modal').css('display', 'block')
         $('#much').attr('placeholder', value)
 
-        
+
         $('#btn-save').on("click", function(){
             var input = $('.input').val()
             if(input == ''){
-                alert('Error')
+                alert('Error');
                 return
             }
             localStorage.setItem(date, input)
